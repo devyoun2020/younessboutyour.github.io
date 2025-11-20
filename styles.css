@@ -1,0 +1,252 @@
+:root {
+    --bg: #f5f4f7;
+    --bg-alt: #ffffff;
+    --text: #1d1d1d;
+    --muted: #676a72;
+    --accent: #5f3dc4;
+    --accent-light: #ede7ff;
+    --border: #e2e2e8;
+    --shadow: 0 20px 60px rgba(19, 22, 45, 0.08);
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.hero {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem clamp(1.2rem, 4vw, 5rem);
+    background: linear-gradient(135deg, #060922, #161b3c);
+    color: #fff;
+}
+
+.hero__content h1 {
+    margin: 0 0 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 4vw, 4rem);
+}
+
+.hero__content .subtitle {
+    font-size: 1.1rem;
+    max-width: 35ch;
+}
+
+.hero__card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.hero__quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.hero__facts {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero__facts li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.95rem;
+}
+
+.fact__label {
+    color: #a9acc6;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.75rem;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn.ghost {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+main {
+    padding: 4rem clamp(1.2rem, 4vw, 5rem);
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.section.alt {
+    background: var(--bg-alt);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.section__header {
+    margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid--wide {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    background: var(--bg-alt);
+    border-radius: 1.2rem;
+    padding: 1.8rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.card ul {
+    padding-left: 1.2rem;
+    color: var(--muted);
+}
+
+.timeline {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.timeline article {
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent);
+    background: var(--bg-alt);
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+}
+
+.timeline__year {
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0;
+}
+
+.project {
+    background: #0c102e;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1.3rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.project__tag {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    color: #cbb8ff;
+    margin: 0;
+}
+
+.project__meta {
+    margin: 0;
+    color: #a9acc6;
+    font-size: 0.9rem;
+}
+
+.contact-card {
+    background: var(--bg-alt);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+footer {
+    padding: 2.5rem;
+    text-align: center;
+    color: var(--muted);
+    background: #0f1128;
+    color: #afb4d8;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding-top: 6rem;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section.alt {
+        padding: 2rem;
+    }
+}

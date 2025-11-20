@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jeanne Durand · Maître de conférences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__content">
+            <p class="eyebrow">Université de la Côte d'Opale</p>
+            <h1>Dr. Jeanne Durand</h1>
+            <p class="subtitle">Maître de conférences en intelligence artificielle et systèmes distribués.</p>
+            <div class="hero__actions">
+                <a class="btn primary" href="#research">Recherches</a>
+                <a class="btn ghost" href="#contact">Me contacter</a>
+            </div>
+        </div>
+        <div class="hero__card">
+            <p class="hero__quote">« Je conçois des systèmes d'IA fiables, transparents et utiles à la société. »</p>
+            <ul class="hero__facts">
+                <li><span class="fact__label">Poste</span><span>Maître de conférences</span></li>
+                <li><span class="fact__label">Département</span><span>Informatique</span></li>
+                <li><span class="fact__label">Campus</span><span>Dunkerque</span></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="research" class="section">
+            <div class="section__header">
+                <p class="eyebrow">Domaines clés</p>
+                <h2>Recherches actuelles</h2>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <h3>Apprentissage fédéré frugal</h3>
+                    <p>Conception d'algorithmes sobres en énergie pour entraîner des modèles sur des données sensibles, directement sur site.</p>
+                    <ul>
+                        <li>Coordination des projets H2020 TRUST-AI et CARE.</li>
+                        <li>Co-direction de 3 thèses CIFRE.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Transparence des modèles</h3>
+                    <p>Développement d'outils d'explicabilité pour des architectures neuronales hybrides et graphes de connaissances.</p>
+                    <ul>
+                        <li>Création de la bibliothèque libre <code>clarify-ml</code>.</li>
+                        <li>Interventions régulières CNRS, Inria, Etalab.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>IA et territoires</h3>
+                    <p>Accompagnement de collectivités pour déployer des services d'IA responsables dans les mobilités et l'énergie.</p>
+                    <ul>
+                        <li>Pilotage du living lab Côte Durable.</li>
+                        <li>Publications avec l'ADEME et l'ANCT.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="teaching" class="section alt">
+            <div class="section__header">
+                <p class="eyebrow">Pédagogie</p>
+                <h2>Cours et encadrements</h2>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <h3>Master IA &amp; Data</h3>
+                    <p>Responsable du module « Architecture des systèmes distribués » (24h CM/TD) et ateliers pratiques Kubernetes.</p>
+                </article>
+                <article class="card">
+                    <h3>Licence Informatique</h3>
+                    <p>Initiation à la programmation parallèle et projets fil rouge autour de l'IA pour la transition écologique.</p>
+                </article>
+                <article class="card">
+                    <h3>Encadrement</h3>
+                    <p>Suivi annuel de 6 mémoires de master, 8 stages longs et co-direction de thèses sur l'IA frugale.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="section__header">
+                <p class="eyebrow">Publications</p>
+                <h2>Sélection récente</h2>
+            </div>
+            <div class="timeline">
+                <article>
+                    <p class="timeline__year">2024</p>
+                    <h3>« Federated Learning in Constrained Cities »</h3>
+                    <p>IEEE SmartCity — Cadre méthodologique pour entraîner des modèles de mobilité sur des flottes municipales.</p>
+                </article>
+                <article>
+                    <p class="timeline__year">2023</p>
+                    <h3>« Graph Explanations for Hybrid Neural Systems »</h3>
+                    <p>Journal of Responsible AI — Outils de visualisation pour réseaux hybrides symboliques.</p>
+                </article>
+                <article>
+                    <p class="timeline__year">2022</p>
+                    <h3>« Energie et IA, guide opérationnel »</h3>
+                    <p>Rapport ADEME — Co-écrit avec 12 collectivités sur l'efficacité énergétique des data centers locaux.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section alt">
+            <div class="section__header">
+                <p class="eyebrow">Transfert</p>
+                <h2>Projets structurants</h2>
+            </div>
+            <div class="grid grid--wide">
+                <article class="project">
+                    <div>
+                        <p class="project__tag">Programme européen</p>
+                        <h3>TRUST-AI</h3>
+                        <p>Plateforme pour auditer les systèmes d'IA des métropoles européennes et garantir leur conformité réglementaire.</p>
+                    </div>
+                    <p class="project__meta">Rôle : coordinatrice scientifique · Partenaires : 9 universités</p>
+                </article>
+                <article class="project">
+                    <div>
+                        <p class="project__tag">Living lab</p>
+                        <h3>Côte Durable</h3>
+                        <p>Expérimentation d'IA frugale sur l'éclairage urbain, combinant capteurs bas débit et modèles embarqués.</p>
+                    </div>
+                    <p class="project__meta">Rôle : fondatrice · Soutiens : ADEME, Région HDF</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section__header">
+                <p class="eyebrow">Contact</p>
+                <h2>Restons en lien</h2>
+            </div>
+            <div class="contact-card">
+                <div>
+                    <h3>Coordonnées</h3>
+                    <p>Département Informatique, UCO</p>
+                    <p>35 rue des Universités · 59140 Dunkerque</p>
+                    <p>Bureau B-412</p>
+                </div>
+                <div>
+                    <h3>Réseaux &amp; médias</h3>
+                    <ul>
+                        <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:jeanne.durand@uco.fr">jeanne.durand@uco.fr</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Disponibilités</h3>
+                    <p>Rendez-vous sur demande · Réponse sous 48h ouvrées.</p>
+                    <p>Cheffe du comité égalité femmes-hommes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Jeanne Durand · Université de la Côte d'Opale</p>
+        <p>Site hébergé sur GitHub Pages · Code sous licence MIT.</p>
+    </footer>
+
+    <script>
+        const yearEl = document.getElementById('current-year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
